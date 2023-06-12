@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Innovation</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div class="loader_wrapper">
+        <img src="images/satoshiai-logo.svg" class="mb-3 logo" alt="">
+        <div class="loader_circle preload-wrap">
+            <div id="circle" class="p_circle"></div>
+            <img src="images/loader-inner-icon.svg" alt="">
+        </div>
+        <p class="fw-bold percentage_text">0%</p>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content ai_innovation_modal">
+                <div class="py-5 px-4">
+                    <button type="button" class="overview_modal_close ai_innovation_modal_cross"
+                        data-bs-dismiss="modal"><img src="images/ai-innovation-x-icon.svg" alt=""></button>
+                    <div class="py-4 px-4">
+                        <h4 id="ai_innovation_modal_title" class="fs_18 mb-5">The Foundation of Machine Learning: Deep
+                            Neural
+                            Networks (DNNs)</h4>
+                        <div class="modal_footer ai_innovation_modal_footer text-start">
+                            <div id="ai_innovation_modal_description" class="letter_space_2 fs_14 lh-lg">Machine
+                                learning (ML)
+                                has emerged as a revolutionary field within the realm of artificial intelligence (AI).
+                                By harnessing the power of deep neural networks (DNNs), ML techniques have the capacity
+                                to address complex problems and surpass the capabilities of previous approaches. <br>
+                                <br>
+                                Satoshi AI aims to explore the advancements and potential of ML, focusing on its
+                                nonlinear processing abilities and remarkable learning capabilities.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+      <!-- site_nav -->
+      <div class="wrap_nav">
+        <nav id="site_nav" class="navbar navbar-expand-xl">
+            <div class="container-xxl px-md-5 px-sm-4 px-3 py-3">
+                <a class="navbar-brand site_logo" href="index.html"><img src="images/logo-v1.png" alt="site logo"></a>
+                <button class="navbar-toggler navbar_toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas">
+                    <i class="fas fa-bars fs-5"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" id="offcanvas">
+                    <div class="w-100 d-xl-none d-block p-3">
+                        <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <!-- nav_ul -->
+                    <ul class="nav_ul navbar-nav ms-auto mb-2 mb-lg-0 py-xl-0 py-5">
+                         <li class="nav-item d-lg-none d-xl-none">
+                            <a class="nav-link me-xl-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-xl-3" href="overview.html">Overview</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link " href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link active" href="ai-innovation.html">ai Innovation</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link" href="all-in-defi.html">ai in defi</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link" href="news-media.html">news hubs</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link" href="faq.html">faq</a>
+                        </li>
+                        <li class="nav-item me-xl-3 d-lg-none d-xl-none">
+                            <a class="nav-link" href="https://h5.saidelegatesales.io/">Delegate model</a>
+                        </li>
+                        <li class="nav-item me-xl-3 d-lg-none d-xl-none">
+                            <a class="nav-link" href="https://h5.satoshiai.io/user/login">Login</a>
+                        </li>
+                    </ul>
+
+                    <!-- nav_btns -->
+                    <div class="nav_btns ms-xl-5 d-desktop">
+                        <a href="https://h5.saidelegatesales.io/" class="nav_btn_outline btn_link me-3">Delegate model</a>
+                        <a href="https://h5.satoshiai.io/user/login" class="nav_btn_outline btn_link">login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="py-5 overflow-hidden">
+        <div class="container-lg px-sm-4 px-3">
+            <div class="py-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000">
+                <h2 class="text-uppercase fw-semibold text-center">AI Innovation</h2>
+            </div>
+            <div class="sec_divider" data-aos="fade-right" data-aos-duration="500" data-aos-delay="1200"></div>
+            <div class="pt-5 text-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1400">
+                <h4 class="br_md_none fw-semibold text-uppercase heading_effect mb-3 lh-base">THE QUANTUM LEAP OF
+                    ARTIFICIAL INTELLIGENCE</h4>
+                <div class="py-3">
+                    <p class="lh-lg">From the realms of science fiction to the realities of our everyday lives, AI
+                        innovation has shattered our expectations. Machine learning and deep learning have thrust us
+                        into a future where AI reigns supreme. Artificial Intelligence (AI) has rapidly advanced in
+                        recent years, surpassing conventional expectations and reaching new frontiers in machine
+                        learning and deep learning.</p>
+                    <p class="lh-lg">Through this quantum leap in AI innovation, Satoshi AI has unleashed a wave of
+                        transformative technologies, revolutionizing various industries and reshaping the world. From
+                        improving automation processes to enhancing decision-making capabilities, our AI is poised to
+                        becoming an indispensable tool for businesses and societies alike.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- AI-driven Innovation -->
+    <section class="py-lg-5 pt-5 overflow-hidden">
+        <div class="container-lg px-sm-4 px-3">
+            <h4 data-aos="fade-up" data-aos-duration="500" data-aos-duration="200"
+                class="text-white fw-bold text-center text-uppercase mb-5 letter_space_2 innovation_heading position-relative">
+                Linguistic Functions & Data-based Functions</h4>
+        </div>
+
+        <div class="container-lg px-md-5 px-sm-4 px-3">
+            <div class="d-flex justify-content-between pt-5 flex-wrap px-2" role="tablist">
+                <div class="innovation_box innovation_box_white active mb-md-0 mb-5" id="satoshi_function_1-tab"
+                    data-bs-toggle="tab" data-bs-target="#satoshi_function_1" type="button" role="tab"
+                    aria-controls="satoshi_function_1" aria-selected="true" data-aos="fade-right"
+                    data-aos-duration="500" data-aos-duration="200">
+                    <div class="d-flex">
+                        <img width="35" src="images/innovation_box_icon_1.svg" alt="">
+                        <h4 class="text-white fw-normal lh-sm mb-0 ms-4">Satoshi AI's <br> Linguistic Functions</h4>
+                    </div>
+                    <h3 class="h2 mb-0 innovation_box_after letter_space_2">01</h3>
+                </div>
+                <div class="innovation_box innovation_box_white" id="satoshi_function_2-tab" data-bs-toggle="tab"
+                    data-bs-target="#satoshi_function_2" type="button" role="tab" aria-controls="satoshi_function_2"
+                    aria-selected="false" data-aos="fade-left" data-aos-duration="500" data-aos-duration="200">
+                    <div class="d-flex">
+                        <img width="35" src="images/innovation_box_icon_2.svg" alt="">
+                        <h4 class="text-white fw-normal lh-sm mb-0 ms-4">Satoshi AI's <br> Data-based Functions</h4>
+                    </div>
+                    <h3 class="h2 mb-0 innovation_box_after letter_space_2">02</h3>
+                </div>
+            </div>
+
+            <div class="px-3 tab-content">
+                <div class="tab-pane fade show active" id="satoshi_function_1" role="tabpanel"
+                    aria-labelledby="satoshi_function_1-tab" data-aos="zoom-in" data-aos-duration="1000"
+                    data-aos-duration="200">
+                    <div class="satoshi_functions">
+                        <h4
+                            class="fw-normal text-white text-center lh-sm function_text_center mb-0 satoshi_functions_middle_text d-sm-block d-none">
+                            Satoshi AI's <br> Linguistic Functions</h4>
+
+                        <div class="satoshi_functions_row satoshi_functions_row_1">
+                            <div class="satoshi_functions_box satoshi_functions_box_1 satoshi_functions_box_item"
+                                data-text="AI Chatbot An artificially intelligent chatbot is a conversational user interface that uses natural language to interact with users.">
+                                <img width="30" src="images/functions-icon-1.svg" alt="">
+                                <p class="text-white text-center mb-0">AI <br> Chatbot</p>
+                            </div>
+                            <div class="satoshi_functions_box satoshi_functions_box_2 satoshi_functions_box_item"
+                                data-text="Virtual assistance is a type of AI-powered technology that can perform a variety of tasks.">
+                                <img width="30" src="images/functions-icon-2.svg" alt="">
+                                <p class="text-white text-center mb-0 ">Virtual <br> Assistance</p>
+                            </div>
+                        </div>
+
+                        <div class="satoshi_functions_row satoshi_functions_row_2">
+                            <div class="satoshi_functions_box satoshi_functions_box_1 satoshi_functions_box_item"
+                                data-text="A search engine that uses artificial intelligence to deliver consumers more precise and pertinent results is known as an AI-powered smart search.">
+                                <img width="30" src="images/functions-icon-3.svg" alt="">
+                                <p class="text-white text-center mb-0">AI <br> Smart Search</p>
+                            </div>
+                            <div class="satoshi_functions_box satoshi_functions_box_2 satoshi_functions_box_item"
+                                data-text="A recommender system is a piece of AI-powered software that makes user-specific recommendations based on their preferences and activities.">
+                                <img width="30" src="images/functions-icon-4.svg" alt="">
+                                <p class="text-white text-center mb-0 ">Recommender <br> System</p>
+                            </div>
+                        </div>
+
+                        <div class="satoshi_functions_row satoshi_functions_row_3">
+                            <div class="satoshi_functions_box satoshi_functions_box_1 satoshi_functions_box_item"
+                                data-text='The term "AI education" describes the application of artificial intelligence technologies to improve student learning.'>
+                                <img width="30" src="images/functions-icon-5.svg" alt="">
+                                <p class="text-white text-center mb-0">AI <br> Education</p>
+                            </div>
+                            <div class="satoshi_functions_box satoshi_functions_box_2 satoshi_functions_box_item"
+                                data-text="Machine learning techniques are used by predictive analytic engines, AI-powered programs that examine massive datasets and forecast future events.">
+                                <img width="30" src="images/functions-icon-6.svg" alt="">
+                                <p class="text-white text-center mb-0 ">Predictive Analytic <br> Engines</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="py-5 mt-2">
+                        <h4
+                            class="fw-normal text-white text-center lh-sm mb-0 satoshi_functions_middle_text d-sm-none d-block">
+                            Satoshi AI's <br> Linguistic Functions</h4>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="satoshi_function_2" role="tabpanel"
+                    aria-labelledby="satoshi_function_2-tab" data-aos="zoom-in" data-aos-duration="1000"
+                    data-aos-duration="200">
+                    <div class="satoshi_functions">
+                        <h4
+                            class="fw-normal text-white text-center lh-sm function_text_center mb-0 satoshi_functions_middle_text2 d-sm-block d-none">
+                            Satoshi AI's <br> Data-based Functions</h4>
+
+                        <div class="satoshi_functions_row satoshi_functions_row_1">
+                            <div class="satoshi_functions_box satoshi_functions_box_1 satoshi_functions_box_item2"
+                                data-text="It tracks helpful metrics like total value locked and changes in value over different time periods.">
+                                <img width="30" src="images/functions-icon-tab2-1.svg" alt="">
+                                <p class="text-white text-center mb-0">DeFi <br> Analytics</p>
+                            </div>
+                            <div class="satoshi_functions_box satoshi_functions_box_2 satoshi_functions_box_item2"
+                                data-text="It is the act of replicating the trades in your account for a savvy or experienced trader.">
+                                <img width="30" src="images/functions-icon-tab2-5.svg" alt="">
+                                <p class="text-white text-center mb-0 ">AI Market <br> Analysis</p>
+                            </div>
+                        </div>
+
+                        <div class="satoshi_functions_row satoshi_functions_row_2">
+                            <div class="satoshi_functions_box satoshi_functions_box_1 satoshi_functions_box_item2"
+                                data-text="Members of Satoshi AI will be able to choose their portfolio according to their own individual risk appetite.">
+                                <img width="30" src="images/functions-icon-tab2-2.svg" alt="">
+                                <p class="text-white text-center mb-0">Risk Appetite <br> Management</p>
+                            </div>
+                            <div class="satoshi_functions_box satoshi_functions_box_2 satoshi_functions_box_item2"
+                                data-text="It is commonly referred to as a digital or automated platform that provides automated, algorithmic analytic services with minimal to no human supervision.">
+                                <img width="30" src="images/functions-icon-tab2-4.svg" alt="">
+                                <p class="text-white text-center mb-0 ">Portfolio <br> Mirroring</p>
+                            </div>
+                        </div>
+
+                        <div class="satoshi_functions_row satoshi_functions_row_3">
+                            <div class="satoshi_functions_box satoshi_functions_box_1 satoshi_functions_box_item2 satoshi_function_item_1"
+                                data-text='Conservational artificial intelligence (AI) refers to technologies,like chatbots or virtual agents, which users can talk to.'>
+                                <img width="30" src="images/functions-icon-tab2-3.svg" alt="">
+                                <p class="text-white text-center mb-0">Conversational <br> AI</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="py-5">
+                        <h4
+                            class="fw-normal text-white text-center lh-sm mb-0 satoshi_functions_middle_text2 d-sm-none d-block">
+                            Satoshi AI's <br> Data-based Functions</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-lg-5 pt-5 pb-5 overflow-hidden">
+        <div class="container-lg px-sm-4 px-3">
+            <h4 data-aos="fade-up" data-aos-duration="500" data-aos-duration="200"
+                class="text-white text-center text-uppercase mb-5 letter_space_2">The Revolutionary AI by
+                Satoshi AI</h4>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-duration="200">
+                    <div class="ai_innovation_4_lg first" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h4 class="text-white text-center text-uppercase letter_space_2">Deep Neural
+                            Networks (DNNs)</h4>
+                        <div class="ai_innovation_4_lg_title_1 d-none visually-hidden">The Foundation of Machine
+                            Learning: Deep Neural Networks (DNNs)</div>
+                        <div class="ai_innovation_4_lg_title_2 d-none visually-hidden">
+                            <p>Machine learning (ML) has emerged as a revolutionary field within the realm of artificial
+                                intelligence (AI). By harnessing the power of deep neural networks (DNNs), ML techniques
+                                have the capacity to address complex problems and surpass the capabilities of previous
+                                approaches.</p>
+                            <p>Satoshi AI aims to explore the advancements and potential of ML,
+                                focusing on its nonlinear processing abilities and remarkable learning capabilities.</p>
+                        </div>
+                        <img class="ai_innovation_4_lg_img d-none" src="images/ai_innovation_4_lg_one.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="500" data-aos-duration="200">
+                    <div class="ai_innovation_4_lg second" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h4 class="text-white text-center text-uppercase letter_space_2">Advancements in Machine Learning</h4>
+                        <div class="ai_innovation_4_lg_title_1 d-none visually-hidden">Advancements in Machine Learning:
+                        </div>
+                        <div class="ai_innovation_4_lg_title_2 d-none visually-hidden">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><span class="font-weight-bold"> ML's role in AI:</span> Machine learning has become a vital research
+                                    direction within the broader scope of AI. Satoshi AI’s ML algorithms leverage DNNs
+                                    to process and analyze vast amounts of data, enabling the extraction of valuable
+                                    insights and predictions. This technology has had a profound impact across various
+                                    domains, including computer vision, natural language processing, recommendation
+                                    systems, and automated tools.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Nonlinear processing with deep neural networks:</span> The core strength of
+                                    Satoshi AI’s ML lies in its ability to process nonlinear relationships within data.
+                                    Satoshi AI’s DNNs, with a vast interconnected layers of neurons, capture intricate
+                                    patterns and subtle dependencies that conventional algorithms struggle to discern.
+                                    This nonlinear processing capability enables ML to solve highly complex problems and
+                                    achieve significant performance improvements.</li>
+                            </ul>
+                        </div>
+                        <img class="ai_innovation_4_lg_img d-none" src="images/ai_innovation_4_lg_two.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="500" data-aos-duration="200">
+                    <div class="ai_innovation_4_lg third" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h4 class="text-white text-center text-uppercase letter_space_2">Satoshi AI’s Algorithms</h4>
+                        <div class="ai_innovation_4_lg_title_1 d-none visually-hidden">The Basic Functions of Satoshi
+                            AI’s Algorithms:</div>
+                        <div class="ai_innovation_4_lg_title_2 d-none visually-hidden">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><span class="font-weight-bold">Computer vision:</span> Satoshi AI’s algorithms have revolutionized
+                                    computer vision tasks, such as object detection, image recognition, and facial
+                                    recognition. By training the DNN models on vast datasets, the AI can accurately
+                                    identify objects, analyze scenes, and even generate realistic images.</li>
+                                <li class="mb-2"><span class="font-weight-bold"> Natural language processing:</span> The ML techniques implemented by
+                                    Satoshi AI, including deep learning, have greatly enhanced natural language
+                                    understanding and generation. This has led to the AI’s significant advancements in
+                                    speech recognition, machine translation, sentiment analysis, and chatbot
+                                    interactions.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Data analysis and pattern recognition:</span> Satoshi AI’s algorithms
+                                    excels in extracting meaningful insights from large and complex datasets. By
+                                    analyzing patterns and correlations, ML algorithms can uncover hidden relationships,
+                                    make accurate predictions, and drive data-driven decision-making in fields such as
+                                    finance, healthcare, marketing, and scientific research.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Automation and efficiency:</span> ML enables Satoshi AI the automation
+                                    ability in completing repetitive and labor-intensive tasks, including data
+                                    classification, anomaly detection, and predictive modeling.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Personalization and recommendation systems:</span> Satoshi AI’s algorithms
+                                    empower personalized recommendations by analyzing user behaviors and preferences, to
+                                    deliver tailored solutions that improve user experiences and engagement.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Predictive analytics and forecasting:</span> The ML algorithms of Satoshi
+                                    AI also analyze historical data to identify trends, patterns, and anomalies,
+                                    enabling more accurate predictions and forecasting in various fields.</li>
+                            </ul>
+                        </div>
+                        <img class="ai_innovation_4_lg_img d-none" src="images/ai_innovation_4_lg_three.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="500" data-aos-duration="200">
+                    <div class="ai_innovation_4_lg fourth" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h4 class="text-white  text-center text-uppercase letter_space_2">Satoshi AI’s
+                            Machine Learning</h4>
+                        <div class="ai_innovation_4_lg_title_1 d-none visually-hidden">The Next Level of Satoshi AI’s
+                            Machine Learning: </div>
+                        <div class="ai_innovation_4_lg_title_2 d-none visually-hidden">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><span class="font-weight-bold">Model Efficiency and Optimization:</span> Improving the efficiency of DNN
+                                    models is a key focus for Satoshi AI’s enhanced AI systems. This involves developing
+                                    techniques to reduce model size, decrease computational requirements, and optimize
+                                    memory usage. Efficient architectures, model compression, and quantization
+                                    techniques are being explored to make AI models more lightweight and
+                                    resource-friendly.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Transfer Learning and Few-Shot Learning:</span> Satoshi AI’s transfer
+                                    learning enables the transfer of knowledge from pre-trained models to new tasks,
+                                    accelerating the learning process and improving performance, especially when
+                                    training data is limited. Further advancements were achieved by Satoshi AI in
+                                    revolutionizing transfer learning techniques, as well as few-shot learning, which
+                                    aimed to train models with only a few examples.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Explainability and Interpretability:</span> Enhancing the interpretability
+                                    and explainability of AI is crucial for building trust and understanding the
+                                    decision-making processes. Satoshi AI developed techniques that provide transparent
+                                    explanations for model predictions, identifying the key features driving decisions,
+                                    and understanding the underlying reasoning behind the machine learning process.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Robustness and Adversarial Defense:</span> Strengthening AI models'
+                                    resilience against adversarial attacks is essential for real-world applications.
+                                    Satoshi AI developed robust ML algorithms that can detect and mitigate adversarial
+                                    examples, as well as methods for enhancing model security and privacy.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Federated Learning and Privacy-Preserving Techniques:</span> Federated
+                                    learning allows training models on decentralized data sources while maintaining
+                                    privacy. Satoshi AI’s advancements in federated learning protocols and
+                                    privacy-preserving techniques enable collaborative training or data sharing across
+                                    multiple entities without disclosing sensitive data, leading to enhanced privacy
+                                    protection and improved model performance.</li>
+                                <li class="mb-2"><span class="font-weight-bold">Meta-Learning and AutoML:</span> Meta-learning focuses on ensuring Satoshi
+                                    AI the ability of learning how to learn, continuously. It enhanced model
+                                    generalization and adaptation to new tasks and domains by leveraging prior learning
+                                    experiences. Similarly, Satoshi AI’s automated machine learning (AutoML) aims to
+                                    automate the process of designing and optimizing ML models, making the AI more
+                                    accessible and efficient for non-experts.</li>
+                            </ul>
+                        </div>
+                        <img class="ai_innovation_4_lg_img d-none" src="images/ai_innovation_4_lg_four.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-lg-5 py-5 overflow-hidden">
+        <div class="container-lg px-sm-4 px-3">
+            <div class="text-center">
+                <h4 data-aos="fade-up" data-aos-duration="500" data-aos-duration="200"
+                    class="text-white fw-bold text-uppercase mb-5 letter_space_2 innovation_heading position-relative">
+                    Structure of Catalyst: Building A Robust & Adaptive <br> Software Architecture</h4>
+                <p class="mb-5">Satoshi AI is building a computing architecture with solid network building blocks that can
+                    facilitate market <br> interactions with AI and machine learning tools with these primary functions:</p>
+            </div>
+            <div class="col-12 mx-auto">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item ai_innovation_accordion_item">
+                        <h2 class="accordion-header ai_innovation_accordion_header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Interoperability
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>The network can interact and operate with multiple blockchain with cross-chain operation and functions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item ai_innovation_accordion_item">
+                        <h2 class="accordion-header ai_innovation_accordion_header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Data Privacy and Confidentiality
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Protect user’s confidentially by providing optimum user-side controls. Users will remain in control of their data, thereby executing any transactions via smart contracts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item ai_innovation_accordion_item">
+                        <h2 class="accordion-header ai_innovation_accordion_header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Modularity
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Implementing flexible and adaptable network capabilities to create custom topologies. We will be building Human-AI collaboration to study how humans and artificial intelligence (AI agents) work together to accomplish a shared goal and purpose.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item ai_innovation_accordion_item">
+                        <h2 class="accordion-header ai_innovation_accordion_header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Scalability & Mass Scaling</button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>We will be hosting both private and private contracts, allowing scalable and resilient applications all across the network with minimal transaction costs. One of the primary purposes of the mass scaling is to improve the computational efficiency of the analytical operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 overflow-hidden">
+        <div class="container-lg px-sm-4 px-3">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-uppercase letter_space_2" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-duration="400">J AI</h2>
+                <h4 class="fw-bold text-uppercase letter_space_2" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-duration="400">THE WORLD FIRST DEFI-ENABLED AI CHATBOT</h4>
+                <div class="py-4">
+                    <p class="lh-lg mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-duration="500">
+                        Distinguishing itself from conventional AI chatbots, Satoshi AI introduces J, the world's
+                        pioneering AI mining chatbot that offers expert guidance on DeFi data and analytics.</p>
+                    <p class="lh-lg mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-duration="500">Unlike
+                        other chatbots that rely on pre-existing databases, J leverages real-time capabilities to access
+                        the most up-to-date and precise information available on the internet, particularly within the
+                        Web 3.0 landscape. This revolutionary advantage empowers the Satoshi AI ChatBot to analyze vast
+                        volumes of DeFi data in real-time, providing invaluable insights into current market conditions
+                        with a human-like touch, greatly benefiting cryptocurrency enthusiasts worldwide.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="txt_skyBlue fs_18" data-aos="fade-up" data-aos-duration="500" data-aos-duration="200">SATOSHI
+                    AI</p>
+                <h2 class="fw-bold text-uppercase letter_space_2" data-aos="fade-up" data-aos-duration="600"
+                    data-aos-duration="400">whitepaper</h2>
+                <div class="py-4 mb-5">
+                    <p class="lh-lg mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-duration="500">Satoshi AI
+                        has a clear focus on DeFi in its initial stages, with the aim of extending its capabilities into
+                        other sectors as the development stabilizes. The team behind Satoshi AI is actively exploring
+                        opportunities in foreign exchange, funds, and stocks, among other areas, with the goal of
+                        leveraging AI to create innovative solutions and drive growth in these markets.</p>
+                    <p class="lh-lg mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-duration="500">As the
+                        business grows and matures, Satoshi AI intends to become a more intelligent company by
+                        leveraging the power of AI to optimize its operations, enhance its products and services, and
+                        create new revenue streams. By using AI to drive innovation and efficiency, the key objective
+                        for Satoshi AI is to work towards becoming a full-fledged public trading company, and is aspired
+                        to transform itself into a large-scaled global conglomerate. As such, the company aims to
+                        provide all token hodlers with access to equity dividends, creating a more inclusive and
+                        equitable business model as reflected in Satoshi AI's vision.</p>
+                    <a href="https://satoshiai.io/pdf/whitepaper6.pdf" class="btn_link learn_more mx-auto py-2"
+                        data-aos="fade-up" data-aos-duration="600" data-aos-duration="500">Download <img
+                            src="images/download-icon.svg" class="ms-2" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="overflow-hidden">
+        <div class="container-lg px-sm-4 px-3">
+            <div class="footer_top d-flex flex-wrap align-items-center justify-content-between mb-md-5">
+                <div class="mb-3 me-4" data-aos="fade-right" data-aos-duration="600" data-aos-duration="200">
+                    <a class="footer_logo" href="index.html"><img src="images/logo-v1.png" alt="site logo"></a>
+                </div>
+                <div>
+                    <ul class="footer_ul ps-0" data-aos="fade-left" data-aos-duration="600" data-aos-duration="200">
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="overview.html" class="p-2">OVERVIEW</a>
+                        </li>
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="features.html" class="p-2">FEATURES</a>
+                        </li>
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="ai-innovation.html" class="p-2">AI INNOVATION</a>
+                        </li>
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="all-in-defi.html" class="p-2">AI IN DEFI</a>
+                        </li>
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="news-media.html" class="p-2">NEWS HUBS</a>
+                        </li>
+                        <li class="mb-md-0 mb-4">
+                            <a href="faq.html" class="p-2">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- footer-bottom -->
+            <div class="footer_bottom d-flex align-items-center justify-content-between pt-3">
+                <ul class="mb-0 me-4">
+                    <li>
+                        <a href="https://www.facebook.com/satoshiAI" target="_blank"><img src="images/facebook.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/satoshi.ai.official" target="_blank"><img src="images/instagram.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/satoshi_ai_" target="_blank"><img src="images/twitter.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/@satoshi_ai_" target="_blank"><img src="images/youtube.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://satoshi-ai-official.medium.com" target="_blank"><img src="images/medium.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/satoshiai" target="_blank"><img src="images/discord.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://satoshiai.zendesk.com/hc/en-us" target="_blank"><img src="images/zendesk.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/satoshi_ai" target="_blank"><img src="images/telegram.png" alt=""></a>
+                    </li>
+                </ul>
+                <p class="mb-0 text-white fs_14">Copyright <label id="dateyear"> </label> <span class="fw-bold">Satoshi AI.</span> All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <!-- chart dependencies -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+    <script>
+        const features_slider = new Swiper('.features_slider .swiper', {
+            pagination: {
+                el: '.features_slider .slider_pagination .swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        const news_media_slider = new Swiper('.news_media_slider .swiper', {
+            pagination: {
+                el: '.news_media_slider .slider_pagination .swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    spaceBetween: 70,
+                    slidesPerView: 1.2,
+                },
+                480: {
+                    spaceBetween: 80,
+                    slidesPerView: 1.6,
+                },
+                567: {
+                    spaceBetween: 80,
+                    slidesPerView: 2,
+                },
+                767: {
+                    spaceBetween: 80,
+                    slidesPerView: 2.4,
+                },
+                1199: {
+                    spaceBetween: 90,
+                    slidesPerView: 3,
+                },
+            },
+
+        });
+
+        // chart 
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+
+        var chart = am4core.create("chartdiv", am4charts.PieChart3D);
+        chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+
+        chart.data = [
+            {
+                country: "Mining",
+                litres: 75,
+            },
+            {
+                country: "Marketing Reward",
+                litres: 10,
+            },
+            {
+                country: "Research & Development",
+                litres: 10,
+            },
+            {
+                country: "Initial Crowdsales",
+                litres: 5,
+            },
+        ];
+
+        chart.innerRadius = am4core.percent(50);
+        chart.depth = 50;
+
+        chart.legend = false;
+
+        var series = chart.series.push(new am4charts.PieSeries3D());
+        series.dataFields.value = "litres";
+        series.dataFields.depthValue = "litres";
+        series.dataFields.category = "country";
+        series.slices.template.cornerRadius = 20;
+        // series.colors.step = 5;
+        series.colors.list = [
+            am4core.color("#0096FF"),
+            am4core.color("#8E30FF"),
+            am4core.color("#FFBE3D"),
+            am4core.color("#03f2ff"),
+        ];
+
+        series.labels.template.disabled = true;
+        series.ticks.template.disabled = true;
+
+
+        window.addEventListener("load", function () {
+            var loader_wrapper = document.querySelector(".loader_wrapper");
+            var percentage = document.querySelector(".fw-bold");
+
+            var startTime = performance.timing.loadEventStart;
+            var endTime = performance.timing.loadEventEnd;
+            var totalTime = startTime - endTime;
+
+            console.log(totalTime);
+            var progress = 0;
+            var progress1 = 0;
+            setTimeout(function () {
+                var interval = setInterval(() => {
+                    progress += 1;
+                    document.querySelector("#circle").style.setProperty('--circle_value', `${progress}%`);
+                    percentage.innerHTML = progress + "%";
+                    document.body.style = "overflow: hidden;";
+                
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        setTimeout(() => {
+                            // Hide the loader after the page is fully loaded
+                            loader_wrapper.style.display = "none";
+                            document.body.style = "";
+
+                           
+                        }, 100)
+                    }
+                }, 10)
+            }, totalTime / 100);
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            once: true
+        });
+
+        
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("dateyear").innerHTML = year;
+
+        let satoshi_functions_box_item = document.querySelectorAll('.satoshi_functions_box_item');
+
+        let satoshi_functions_middle_text = document.querySelectorAll('.satoshi_functions_middle_text');
+
+        for (let index = 0; index < satoshi_functions_box_item.length; index++) {
+            satoshi_functions_box_item[index].addEventListener('mouseover', (e) => {
+                satoshi_functions_middle_text[0].textContent = satoshi_functions_box_item[index].getAttribute('data-text');
+                satoshi_functions_middle_text[1].textContent = satoshi_functions_box_item[index].getAttribute('data-text');
+            });
+        }
+
+        let satoshi_functions_box_item2 = document.querySelectorAll('.satoshi_functions_box_item2');
+        let satoshi_functions_middle_text2 = document.querySelectorAll('.satoshi_functions_middle_text2');
+
+        for (let index = 0; index < satoshi_functions_box_item2.length; index++) {
+            satoshi_functions_box_item2[index].addEventListener('mouseover', (e) => {
+                satoshi_functions_middle_text2[0].textContent = satoshi_functions_box_item2[index].getAttribute('data-text');
+                satoshi_functions_middle_text2[1].textContent = satoshi_functions_box_item2[index].getAttribute('data-text');
+            });
+        }
+
+    </script>
+
+    <script>
+        let ai_innovation_4_lg = document.querySelectorAll('.ai_innovation_4_lg');
+
+        for (let index = 0; index < ai_innovation_4_lg.length; index++) {
+            let modal_footer = document.querySelector('.modal_footer');
+            ai_innovation_4_lg[index].addEventListener('click', (e) => {
+                let ai_innovation_4_lg_title_1 = e.target.parentElement.querySelector('.ai_innovation_4_lg_title_1').textContent;
+                let ai_innovation_4_lg_title_2 = e.target.parentElement.querySelector('.ai_innovation_4_lg_title_2').innerHTML;
+                let ai_innovation_4_lg_img = e.target.parentElement.querySelector('.ai_innovation_4_lg_img').src;
+
+                console.log(ai_innovation_4_lg_title_1, ai_innovation_4_lg_title_2, ai_innovation_4_lg_img);
+                let ai_innovation_main_modal_title = document.getElementById('ai_innovation_modal_title').textContent = ai_innovation_4_lg_title_1;
+                let ai_innovation_modal_description = document.getElementById('ai_innovation_modal_description').innerHTML = ai_innovation_4_lg_title_2;
+                let ai_innovation_modal = document.querySelector('.ai_innovation_modal').style = `background: url("${ai_innovation_4_lg_img}"); background-size: cover; background-repeat: no-repeat; background-color: #000;`;
+            })
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+@media (min-width: 1400px) {
+  .satoshi_functions_box {
+    width: 140px;
+    min-height: 135px;
+  }
+}
+@media(max-width: 1300px) {
+  .nav_btns a,
+  .nav_ul li a {
+      font-size: 11px;
+  }
+}
+@media (max-width: 1199px) {
+  #offcanvas {
+    flex-direction: column;
+  }
+  .nav_ul {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .nav_ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .nav_ul li a {
+    text-align: center;
+    color: var(--bs-white) !important;
+  }
+  .nav_btns a,
+    .nav_ul li a {
+        font-size: 14px;
+    }
+  .nav_btns .nav_btn_outline,
+  .nav_btns .nav_btn_outline:hover {
+    color: var(--bs-white);
+  }
+  .nav_btns .nav_btn_fill:hover {
+    color: var(--bs-black);
+  }
+  .tokenomics_top_bg {
+    aspect-ratio: 1/0.22;
+  }
+}
+@media (max-width: 991px) {
+  .tokenomics_top_bg {
+    aspect-ratio: 1/0.35;
+  }
+  .chip_icon {
+    max-width: 180px;
+    top: 18%;
+  }
+  .satoshi_functions {
+    width: 85%;
+  }
+}
+@media (max-width: 800px) {
+  .br_md_none br {
+    display: none;
+  }
+  .grid_row {
+    margin: 70px 0;
+  }
+  .grid_box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .chip_icon {
+    max-width: 160px;
+    top: 20%;
+  }
+  .footer_top {
+    justify-content: center !important;
+  }
+  .footer_ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer_bottom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer_bottom ul {
+    margin-bottom: 1rem !important;
+    margin-right: 0 !important;
+  }
+  .tokenomics_top_bg {
+    aspect-ratio: 1/0.45;
+  }
+  .innovation_box {
+    width: 100%;
+  }
+  .satoshi_functions_box p {
+    font-size: 2vw;
+    font-size: 2dvw;
+  }
+  .satoshi_functions_box {
+    width: 18vw;
+    width: 18dvw;
+    min-height: 15vw;
+    min-height: 15dvw;
+    padding-top: 4vw;
+    padding-top: 4dvw;
+  }
+  .satoshi_functions_box img {
+    width: 4.4vw !important;
+    width: 4.4dvw !important;
+  }
+  .satoshi_functions {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  .lh-lg {
+    line-height: 1.6 !important;
+    font-size: 15px;
+  }
+  .tokenomics_top_bg {
+    aspect-ratio: 1/0.7;
+  }
+}
+@media (max-width: 500px) {
+  .grid_box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 1400px) {
+  .satoshi_functions_box {
+    width: 140px;
+    min-height: 135px;
+  }
+}
+@media (max-width: 1199px) {
+  body {
+    overflow-x: clip;
+  }
+  #offcanvas {
+    flex-direction: column;
+  }
+  .nav_ul {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .nav_ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .nav_ul li a {
+    text-align: center;
+    color: var(--bs-white) !important;
+  }
+  .nav_btns .nav_btn_outline,
+  .nav_btns .nav_btn_outline:hover {
+    color: var(--bs-white);
+  }
+  .nav_btns .nav_btn_fill:hover {
+    color: var(--bs-black);
+  }
+  .tokenomics_top_bg {
+    aspect-ratio: 1/0.22;
+  }
+}
+@media (max-width: 991px) {
+  .tokenomics_top_bg {
+    aspect-ratio: 1/0.35;
+  }
+  .chip_icon {
+    max-width: 180px;
+    top: 18%;
+  }
+}
+@media (max-width: 800px) {
+  .br_md_none br {
+    display: none;
+  }
+  .grid_row {
+    margin: 70px 0;
+  }
+  .grid_box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .chip_icon {
+    max-width: 160px;
+    top: 20%;
+  }
+  .footer_top {
+    justify-content: center !important;
+  }
+  .footer_ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer_bottom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer_bottom ul {
+    margin-bottom: 1rem !important;
+    margin-right: 0 !important;
+  }
+  .tokenomics_top_bg {
+    aspect-ratio: 1/0.45;
+  }
+  .innovation_box {
+    width: 100%;
+  }
+  .satoshi_functions_box p {
+    font-size: 2vw;
+    font-size: 2dvw;
+  }
+  .satoshi_functions_box {
+    width: 18vw;
+    width: 18dvw;
+    min-height: 15vw;
+    min-height: 15dvw;
+    padding-top: 4vw;
+    padding-top: 4dvw;
+  }
+  .satoshi_functions_box img {
+    width: 4.4vw !important;
+    width: 4.4dvw !important;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  .lh-lg {
+    line-height: 1.6 !important;
+    font-size: 15px;
+  }
+  .tokenomics_top_bg {
+    aspect-ratio: 1/0.7;
+  }
+  .loader_circle {
+    max-width: unset;
+    width: 60vw;
+    width: 60dvw;
+  }
+  .loader_wrapper .logo {
+      width: 36vw;
+      width: 36dvw;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid_box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1 {
+    font-size: 2.7em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 2.2em;
+  }
+  .lh-lg {
+    line-height: 1.6 !important;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div class="loader_wrapper">
+        <img src="images/satoshiai-logo.svg" class="mb-3 logo" alt="">
+        <div class="loader_circle preload-wrap">
+            <div id="circle" class="p_circle"></div>
+            <img src="images/loader-inner-icon.svg" alt="">
+        </div>
+        <p class="fw-bold percentage_text">0%</p>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content overview_modal_wrapper">
+                <div class="text-center">
+                    <button type="button" class="overview_modal_close" data-bs-dismiss="modal"><img
+                            src="images/modal-close-icon.svg" alt=""></button>
+                    <img id="main_modal_image" src="" class="overview_modal_img mb-3" alt="">
+                    <h4 id="main_modal_title"></h4>
+                    <h5 id="main_modal_title2" class="mb-4 txt_sivler2"></h5>
+                    <div class="modal_footer text-start">
+                        <p id="main_modal_description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- site_nav -->
+     <div class="wrap_nav">
+        <nav id="site_nav" class="navbar navbar-expand-xl">
+            <div class="container-xxl px-md-5 px-sm-4 px-3 py-3">
+                <a class="navbar-brand site_logo" href="index.html"><img src="images/logo-v1.png" alt="site logo"></a>
+                <button class="navbar-toggler navbar_toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas">
+                    <i class="fas fa-bars fs-5"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" id="offcanvas">
+                    <div class="w-100 d-xl-none d-block p-3">
+                        <button type="button" class="btn-close border-0 shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <!-- nav_ul -->
+                    <ul class="nav_ul navbar-nav ms-auto mb-2 mb-lg-0 py-xl-0 py-5">
+                         <li class="nav-item d-lg-none d-xl-none">
+                            <a class="nav-link me-xl-3" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-xl-3 active" href="overview.html">Overview</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link" href="ai-innovation.html">ai Innovation</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link" href="all-in-defi.html">ai in defi</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link" href="news-media.html">news hubs</a>
+                        </li>
+                        <li class="nav-item me-xl-3">
+                            <a class="nav-link" href="faq.html">faq</a>
+                        </li>
+                        <li class="nav-item me-xl-3 d-lg-none d-xl-none">
+                            <a class="nav-link" href="https://h5.saidelegatesales.io/">Delegate model</a>
+                        </li>
+                        <li class="nav-item me-xl-3 d-lg-none d-xl-none">
+                            <a class="nav-link" href="https://h5.satoshiai.io/user/login">Login</a>
+                        </li>
+                    </ul>
+
+                    <!-- nav_btns -->
+                    <div class="nav_btns ms-xl-5 d-desktop">
+                        <a href="https://h5.saidelegatesales.io/" class="nav_btn_outline btn_link me-3">Delegate model</a>
+                        <a href="https://h5.satoshiai.io/user/login" class="nav_btn_outline btn_link">login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="py-5 overflow-hidden">
+        <div class="container-lg px-sm-4 px-3">
+            <div class="text-center pt-5 desktop-padding-text" >
+                <h2 class="text-white fw-bold text-center text-uppercase letter_space_2" data-aos="fade-up"
+                    data-aos-duration="500" data-aos-delay="1000">About satoshi <span class="txt_skyBlue">AI</span></h2>
+                <p class="lh-lg fw-light txt_silver" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1200" style="color: grey;">
+                    Driving Growth in Both AI Revolution & DeFi Development</p>
+                <p class="br_md_none fw-light lh-lg" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1400">As
+                    the legacy of Bitcoin first began with Satoshi Nakamoto, it is now time for the Satoshi Foundation
+                    to proclaim the fundamentals that empower the AI Revolution - with the vision of Satoshi AI,
+                    manifested as J, the first AI for Decentralized Finance.</p>
+                <p class="br_md_none fw-light lh-lg" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1400">
+                    Satoshi AI seeks to establish a fundamental framework that entails the AI revolution by developing a
+                    world-class protocol for networking self-engineering, architecture, management, and operations
+                    of AI and machine learning software and devices. This protocol aims to streamline the
+                    development and deployment of AI and machine learning technologies, enabling businesses to
+                    capitalize on the transformative potential of these technologies.</p>
+            </div>
+        </div>
+        <div class="mb-4 hand_chip_wrap" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+            <img class="chip_icon" src="images/chip.svg" alt="">
+            <img src="images/hand-chip.svg" class="w-100 user-select-none user_drag_none hand-chip" alt="">
+        </div>
+        <div class="mx-auto col-10 about_b_box text-center" data-aos="fade-up" data-aos-duration="600"
+            data-aos-delay="200">
+            <h4 class="text-uppercase fw-bold letter_space_2 mb-4">The Humble Beginning</h4>
+            <p class="lh-lg fw-light mb-0">The Satoshi Foundation was formed by a group of early BTC enthusiasts and
+                techies since the birth of BTC. Taking pride as a prominent entity in the field of artificial
+                intelligence, the Foundation has demonstrated its commitment through the establishment and funding of
+                Satoshi AI, a cutting-edge firm that has been at the forefront of developing innovative solutions to
+                complex problems.</p>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <section class="overflow-hidden">
+        <div class="container-lg px-sm-4 px-3">
+            <div class="row align-items-center flex-md-row flex-column-reverse grid_row pb-4">
+                <div class="col-md-8 desktp-padding-right mobile-center-text" data-aos="fade-left" data-aos-duration="500" data-aos-duration="200">
+                    <h2 class="text-white fw-bold text-uppercase letter_space_2">J – The First AI in DeFi</h2>
+                    <p class="fw-light lh-lg mb-3">J was created by a diverse group of data scientists and artificial
+                        intelligence engineers, who collaborated to develop a revolutionary self-learning and
+                        programmable AI system. Designed with the ability to evolve, perceive, and adapt to the latest
+                        AI and computing systems, J represents a major breakthrough in the field of AI technology, made
+                        applicable in the Decentralized Finance realm.</p>
+                    <p class="fw-light lh-lg mb-3">Thanks to its advanced capabilities, J will play a critical role in
+                        shaping the future of AI integration. In particular, it will be instrumental in bringing
+                        together the diverse products, services, and technologies offered by Satoshi AI, allowing them
+                        to work seamlessly together and deliver even greater value to users in the realm of
+                        Decentralized Finance and beyond.</p>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-5" data-aos="fade-right" data-aos-duration="500" data-aos-duration="200">
+                    <div class="overview_grid_img">
+                        <img src="images/overview-sec-img-1-1.png" class="overview_profile_img_1" alt="">
+                        <img src="images/profile-img-glow-effect.svg" class="overview_profile_glow" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center grid_row py-4">
+                <div class="col-md-4 mb-md-0 mb-4" data-aos="fade-left" data-aos-duration="500" data-aos-duration="200">
+                    <div class="overview_grid_img">
+                        <img src="images/overview-sec-img-1-2.png" class="overview_profile_img_2" alt="">
+                        <img src="images/profile-img-glow-effect.svg"
+                            class="overview_profile_glow overview_profile_img_2" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8 desktp-padding-left mobile-center-text" data-aos="fade-left" data-aos-duration="500" data-aos-duration="200">
+                    <h2 class="modal_title text-white fw-bold text-uppercase letter_space_2 mb-3">Nick jing</h2>
+                    <h4 class="modal_title2 txt_sivler2 text-uppercase br_md_none lh-base fw-bold letter_space_2">
+                        Independent Director of Satoshi AI</h4>
+                    <p class="fw-light lh-lg mb-3">As the Independent Director of Satoshi AI, Nick Jing's expertise is
+                        unparalleled. He takes pride in supporting new startups with innovative ideas that are driving
+                        the growth and development of these fields. With his extensive experience in the cryptocurrency
+                        industry, Nick has a deep understanding of market trends and technology, making him a valuable
+                        asset to the industry.</p>
+                    <p class="modal_description d-none">As the Independent Director of Satoshi AI, Nick Jing's expertise
+                        is unparalleled. He takes pride in supporting new startups with innovative ideas that are
+                        driving the growth and development of these fields. With his extensive experience in the
+                        cryptocurrency industry, Nick has a deep understanding of market trends and technology, making
+                        him a valuable asset to the industry. <br> <br> However, Nick's passion for blockchain
+                        technology goes beyond just investments. He is also interested in building the future of AI and
+                        automation. By exploring the potential of integrating blockchain and AI, he is able to create
+                        more efficient and innovative solutions. This is evident in his interest in Satoshi AI, an
+                        advanced AI system that utilizes blockchain technology to enhance its capabilities. <br> <br>
+                        One area where Nick's technical expertise shines is in the SHA256 hash function, which is
+                        essential in the creation and verification of digital currency transactions. Nick's deep
+                        understanding of this technology enables him to analyze the security and efficiency of various
+                        blockchain networks, ensuring that his investments are secure and have a high potential for
+                        growth.</p>
+                    <img class="d-none modal_img" src="images/nick-jing_img.png" alt="">
+                    <a class="learn_more btn_link modal_btn" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">read more <img src="images/btn-icon.png"
+                            class="readmore_arrow_icon" alt=""></a>
+                </div>
+            </div>
+            <div class="row align-items-center flex-md-row flex-column-reverse grid_row py-4">
+                <div class="col-md-8 desktp-padding-right mobile-center-text" data-aos="fade-left" data-aos-duration="500" data-aos-duration="200">
+                    <h2 class="modal_title text-white fw-bold text-uppercase letter_space_2 mb-3">Lars Lewis Haliburton
+                    </h2>
+                    <h4 class="modal_title2 txt_sivler2 text-uppercase br_md_none lh-base fw-bold letter_space_2">Chief
+                        Executive
+                        Officer</h4>
+                    <p class="fw-light lh-lg mb-3">Meet Lars Lewis Haliburton, CEO of Satoshi AI, a blockchain expert with a proven track record of success. With experience in various positions within the industry, including developer, architect, project manager, and consultant, Lars has worked on projects spanning multiple blockchain domains, including public, federated, and private chains.</p>
+                    <p class="modal_description d-none">Meet Lars Lewis Haliburton, CEO of Satoshi AI, a blockchain expert with a proven track record of success. With experience in various positions within the industry, including developer, architect, project manager, and consultant, Lars has worked on projects spanning multiple blockchain domains, including public, federated, and private chains.<br><br>He has been involved in developing and implementing numerous projects such as smart contracts, decentralised applications (DApps), supply chain management, identity verification, and security solutions, to name a few. Lars has a deep understanding of the business potential and limitations of blockchain technology and has pioneered innovative use cases in multiple industries. <br><br>
+                    Under Lars's visionary leadership, his team has successfully developed several AI and blockchain applications that have brought considerable benefits to customers and improved the industry as a whole. Furthermore, Lars's unwavering commitment to innovation, diversity, and community has made the Satoshi AI an integral part of the Reading tech ecosystem.</p>
+                    <img class="d-none modal_img" src="images/lars-lewis_img.png" alt="">
+                    <a class="learn_more btn_link modal_btn" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">read more <img src="images/btn-icon.png"
+                            class="readmore_arrow_icon" alt=""></a>
+                </div>
+                <div class="col-md-4 mt-md-0 mb-4" data-aos="fade-left" data-aos-duration="500" data-aos-duration="200">
+                    <div class="overview_grid_img">
+                        <img src="images/overview-sec-img-1-3.png" class="overview_profile_img_2" alt="">
+                        <img src="images/profile-img-glow-effect.svg"
+                            class="overview_profile_glow overview_profile_img_2" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="overflow-hidden">
+        <div class="container-lg px-sm-4 px-3">
+            <div class="footer_top d-flex flex-wrap align-items-center justify-content-between mb-md-5">
+                <div class="mb-3 me-4" data-aos="fade-right" data-aos-duration="600" data-aos-duration="200">
+                    <a class="footer_logo" href="index.html"><img src="images/logo-v1.png" alt="site logo"></a>
+                </div>
+                <div>
+                    <ul class="footer_ul ps-0" data-aos="fade-left" data-aos-duration="600" data-aos-duration="200">
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="overview.html" class="p-2">OVERVIEW</a>
+                        </li>
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="features.html" class="p-2">FEATURES</a>
+                        </li>
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="ai-innovation.html" class="p-2">AI INNOVATION</a>
+                        </li>
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="all-in-defi.html" class="p-2">AI IN DEFI</a>
+                        </li>
+                        <li class="me-4 mb-md-0 mb-4">
+                            <a href="news-media.html" class="p-2">NEWS HUBS</a>
+                        </li>
+                        <li class="mb-md-0 mb-4">
+                            <a href="faq.html" class="p-2">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- footer-bottom -->
+            <div class="footer_bottom d-flex align-items-center justify-content-between pt-3">
+                <ul class="mb-0 me-4">
+                    <li>
+                        <a href="https://www.facebook.com/satoshiAI" target="_blank"><img src="images/facebook.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/satoshi.ai.official" target="_blank"><img src="images/instagram.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/satoshi_ai_" target="_blank"><img src="images/twitter.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/@satoshi_ai_" target="_blank"><img src="images/youtube.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://satoshi-ai-official.medium.com" target="_blank"><img src="images/medium.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/satoshiai" target="_blank"><img src="images/discord.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://satoshiai.zendesk.com/hc/en-us" target="_blank"><img src="images/zendesk.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/satoshi_ai" target="_blank"><img src="images/telegram.png" alt=""></a>
+                    </li>
+                </ul>
+                <p class="mb-0 text-white fs_14">Copyright <label id="dateyear"> </label> <span class="fw-bold">Satoshi AI.</span> All rights
+                    reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/circle-progress.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            var loader_wrapper = document.querySelector(".loader_wrapper");
+            var percentage = document.querySelector(".fw-bold");
+
+            var startTime = performance.timing.loadEventStart;
+            var endTime = performance.timing.loadEventEnd;
+            var totalTime = startTime - endTime;
+
+            console.log(totalTime);
+            var progress = 0;
+            var progress1 = 0;
+            setTimeout(function () {
+                var interval = setInterval(() => {
+                    progress += 1;
+                    document.querySelector("#circle").style.setProperty('--circle_value', `${progress}%`);
+                    percentage.innerHTML = progress + "%";
+                    document.body.style = "overflow: hidden;";
+                
+                    if (progress >= 100) {
+                        clearInterval(interval);
+                        setTimeout(() => {
+                            // Hide the loader after the page is fully loaded
+                            loader_wrapper.style.display = "none";
+                            document.body.style = "";
+
+                            let typed = new Typed('#element', {
+                                strings: ['ATOSHI <span class="txt_skyBlue">AI</span>'],
+                                typeSpeed: 300,
+                                loop: false
+                            });
+                        }, 100)
+                    }
+                }, 10)
+            }, totalTime / 100);
+        });
+
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("dateyear").innerHTML = year;
+
+
+        AOS.init({
+            once: true
+        });
+
+    </script>
+
+    <script>
+        let modal_btn = document.querySelectorAll('.modal_btn');
+
+        for (let index = 0; index < modal_btn.length; index++) {
+            modal_btn[index].addEventListener('click', (e) => {
+                let modal_title = e.target.parentElement.querySelector('.modal_title').textContent;
+                let modal_title2 = e.target.parentElement.querySelector('.modal_title2').textContent;
+                let modal_description = e.target.parentElement.querySelector('.modal_description').innerHTML;
+                let modal_img = e.target.parentElement.querySelector('.modal_img').src;
+
+                console.log(modal_title, modal_title2, modal_description, modal_img);
+
+                let main_modal_image = document.getElementById('main_modal_image').src = modal_img;
+                let main_modal_title = document.getElementById('main_modal_title').textContent = modal_title;
+                let main_modal_title2 = document.getElementById('main_modal_title2').textContent = modal_title2;
+                let main_modal_description = document.getElementById('main_modal_description').innerHTML = modal_description;
+            })
+
+        }
+    </script>
+</body>
+
+</html>
